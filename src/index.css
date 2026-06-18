@@ -258,3 +258,195 @@ main {
   color: #666;
   margin-top: 40px;
 }
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+/* Large Tablets (992px and below) */
+@media (max-width: 992px) {
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav h2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details > img {
+    height: 350px;
+  }
+
+  .search-input {
+    width: 250px;
+  }
+}
+
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav h2 {
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    padding: 5px 0;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .filters-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input,
+  .filter-select {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .details {
+    padding: 15px;
+  }
+
+  .details > img {
+    height: 300px;
+  }
+
+  .card-actions {
+    justify-content: center;
+  }
+
+  .card-actions a,
+  .card-actions button {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .favorite-btn {
+    width: 100%;
+  }
+
+  .add-movie-btn {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+
+/* Mobile Phones (576px and below) */
+@media (max-width: 576px) {
+
+  main {
+    width: 95%;
+  }
+
+  .movies-title {
+    font-size: 24px;
+  }
+
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  .details > img {
+    height: 220px;
+  }
+
+  .search-input,
+  .filter-select {
+    width: 100%;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .card-actions a,
+  .card-actions button,
+  .favorite-btn {
+    width: 100%;
+  }
+
+  .add-movie-btn {
+    width: 100%;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+
+/* Very Small Devices (360px and below) */
+@media (max-width: 360px) {
+
+  nav {
+    padding: 12px;
+  }
+
+  nav h2 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .add-movie-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .search-input,
+  .filter-select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .details > img {
+    height: 180px;
+  }
+}
